@@ -8,10 +8,10 @@ from sklearn.cluster import KMeans
 import os
 
 hour_script_dir = os.path.dirname(os.path.realpath(__file__))
-hour_df= pd.read_csv(f"{hour_script_dir}/data.csv")
+hour_df= pd.read_csv(f"{hour_script_dir}/hour.csv")
 
 day_script_dir = os.path.dirname(os.path.realpath(__file__))
-day_df= pd.read_csv(f"{day_script_dir}/data.csv")
+day_df= pd.read_csv(f"{day_script_dir}/day.csv")
 
 st.title("Proyek Belajar Analisis Data Dicoding")
 
