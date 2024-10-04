@@ -6,8 +6,8 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-hour_df = pd.read_csv("hour.csv")
-day_df = pd.read_csv("day.csv")
+hour_df = pd.read_csv('hour.csv')
+day_df = pd.read_csv('day.csv')
 
 
 st.title("Proyek Belajar Analisis Data Dicoding")
