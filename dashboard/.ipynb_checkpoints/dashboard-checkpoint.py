@@ -5,10 +5,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
+import os
 
-hour_df = pd.read_csv('hour.csv')
-day_df = pd.read_csv('day.csv')
+hour_script_dir = os.path.dirname(os.path.realpath(__file__))
+hour_df= pd.read_csv(f"{hour_script_dir}/data.csv")
 
+day_script_dir = os.path.dirname(os.path.realpath(__file__))
+day_df= pd.read_csv(f"{day_script_dir}/data.csv")
 
 st.title("Proyek Belajar Analisis Data Dicoding")
 
